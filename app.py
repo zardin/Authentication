@@ -89,6 +89,7 @@ def secrets():
 
 @app.route('/logout')
 def logout():
+    print("logout")
     logout_user()
     return redirect(url_for('home'))
 
